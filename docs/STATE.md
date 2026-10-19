@@ -8,4 +8,6 @@ Validação: `node --test tests/model.test.cjs tests/browser.test.cjs` passou 15
 
 README contém abertura, controles, roteiro de apresentação e créditos. AGENTS.md registra o contrato estático e instruções de manutenção. Não foi necessário instalar dependências, gerar novos assets ou modificar originais.
 
+Hospedagem: repositório público em https://github.com/RenanRabelo1/atelier-decorator e GitHub Pages em https://renanrabelo1.github.io/atelier-decorator/. O workflow `.github/workflows/pages.yml` prepara `index.html` no artefato publicado, mantendo `Index.html` como a entrada local exigida pelo Windows.
+
 Pendente apenas a avaliação subjetiva do usuário sobre aparência e clareza da demonstração; não foi declarada aprovação do usuário. Nenhum requisito funcional foi adiado.
