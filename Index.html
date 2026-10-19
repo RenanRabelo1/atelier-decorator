@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#264e3e">
+<title>Atelier Decorator · Um padrão, muitas possibilidades</title>
+<link rel="icon" href="Free-Clothing-32x32-Pixel-Icons/1%20Icons/Icon30_06.png">
+<link rel="stylesheet" href="styles.css">
+<script defer src="model.js"></script><script defer src="app.js"></script>
+</head>
+<body>
+<a class="skip-link" href="#main-content">Pular para o conteúdo</a>
+<header class="site-header">
+  <a class="brand" href="Index.html" aria-label="Atelier Decorator, início"><span class="brand-mark"><img src="Free-Clothing-32x32-Pixel-Icons/1%20Icons/Icon30_06.png" alt=""></span><span>atelier <strong>decorator</strong><small>UM PADRÃO, MUITAS POSSIBILIDADES</small></span></a>
+  <div class="header-actions"><span class="offline-tag"><i></i> Feito para experimentar</span><button class="text-button" id="open-help" type="button">Como funciona ↗</button></div>
+</header>
+<main id="main-content">
+<section id="menu-screen" aria-labelledby="hero-title">
+  <div class="hero">
+    <div class="hero-copy">
+      <p class="eyebrow">UM LABORATÓRIO DE PADRÕES DE PROJETO</p>
+      <h1 id="hero-title">Um personagem.<br>Muitas <em>camadas.</em></h1>
+      <p class="hero-description">Vista uma ideia e veja o código acontecer.<br>Descubra como o padrão <strong>Decorator</strong> transforma<br class="desktop-break"> peças simples em novas possibilidades.</p>
+      <div class="hero-note"><span aria-hidden="true">▱</span><p>O mesmo visual.<br><strong>Duas maneiras de construir.</strong></p></div>
+    </div>
+    <div class="hero-art">
+      <span class="art-label">SEU PRÓXIMO EXPERIMENTO</span><div class="hero-orbit"></div>
+      <div class="hero-card pixel-frame"><i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i><span class="preview-tag">PERSONAGEM + POSSIBILIDADES</span><canvas id="hero-canvas" width="32" height="40" role="img" aria-label="Personagem vestido com quatro peças"></canvas><div class="pedestal"></div><span class="hero-character-name">O explorador de ideias</span></div>
+      <span class="floating-item item-one"><img src="Free-Clothing-32x32-Pixel-Icons/1%20Icons/Icon30_13.png" alt=""><b>+ Camisa</b></span>
+      <span class="floating-item item-two"><img src="Free-Clothing-32x32-Pixel-Icons/1%20Icons/Icon30_06.png" alt=""><b>+ Chapéu</b></span>
+      <span class="floating-code">new <b>ChapeuDecorator</b>(personagem)</span><span class="art-spark" aria-hidden="true">✧</span>
+    </div>
+  </div>
+  <div class="mode-intro"><span class="eyebrow">ESCOLHA SEU MODO</span><span>Comece pelo tradicional e depois experimente o Decorator.</span></div>
+  <div class="mode-cards">
+    <button id="start-tradicional" class="mode-card" type="button"><span class="mode-symbol" aria-hidden="true">▦</span><span class="mode-card-body"><span class="mode-kicker">01 / COMBINAÇÕES FIXAS</span><strong>Modo Tradicional</strong><span>Um visual completo, uma classe específica.<br>Explore todas as combinações prontas.</span><span class="mode-card-bottom"><span>16 possibilidades · 16 classes concretas</span><b>Explorar ↗</b></span></span></button>
+    <button id="start-decorator" class="mode-card decorator-card" type="button"><span class="mode-symbol" aria-hidden="true">▱</span><span class="mode-card-body"><span class="mode-kicker">02 / COMPOSIÇÃO EM CAMADAS</span><strong>Modo Decorator</strong><span>Uma peça de cada vez, um novo comportamento.<br>Monte seu visual envolvendo o personagem.</span><span class="mode-card-bottom"><span>16 possibilidades · 4 decoradores concretos</span><b>Experimentar ↗</b></span></span></button>
+  </div>
+  <div class="menu-footnote"><span>CLIQUE. VISTA. ENTENDA.</span><p>Sem pressa, sem pontuação. Só você, as peças e o código.</p></div>
+</section>
+<section id="game-screen" hidden aria-labelledby="game-title">
+  <div class="game-toolbar"><button id="back-home" class="text-button" type="button">← Início</button><div class="mode-switch" role="group" aria-label="Modo de jogo"><button data-mode="tradicional" aria-pressed="false" type="button">▦ Tradicional</button><button data-mode="decorator" aria-pressed="false" type="button">▱ Decorator</button></div><span class="experiment-label">EXPERIMENTO 01 / GUARDA-ROUPA</span></div>
+  <div class="game-heading"><div><p class="eyebrow" id="mode-eyebrow"></p><h1 id="game-title" tabindex="-1"></h1></div><p id="mode-description"></p></div>
+  <div class="workspace">
+    <section class="panel wardrobe-panel" aria-labelledby="wardrobe-title">
+      <header class="panel-heading"><span class="panel-number">01</span><h2 id="wardrobe-title">As peças</h2><span class="count-badge" id="wardrobe-count">4</span></header>
+      <p class="panel-description" id="wardrobe-description"></p><div id="wardrobe-items" class="wardrobe-items"></div>
+      <div class="wardrobe-insight"><span aria-hidden="true">✦</span><p id="wardrobe-insight"></p></div>
+    </section>
+    <section class="panel character-panel" aria-labelledby="character-title">
+      <header class="panel-heading"><span class="panel-number">02</span><h2 id="character-title">O personagem</h2><span class="live-label">● AO VIVO</span></header>
+      <div class="skin-control"><span id="skin-label">Tom de pele</span><div id="skin-options" role="group" aria-labelledby="skin-label"></div></div>
+      <div class="character-stage"><div class="stage-frame pixel-frame"><i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i><span class="stage-caption">PROVADOR DE IDEIAS</span></div><div class="stage-floor"></div><canvas id="character-canvas" width="32" height="40" role="img" aria-label="Personagem sem peças adicionais"></canvas><span id="piece-count" class="stage-status">0 de 4 peças</span></div>
+      <div class="outfit-summary"><span class="eyebrow">VESTINDO AGORA</span><div id="outfit-pieces"></div></div>
+      <button id="reset-outfit" class="reset-button" type="button" disabled>↺ Tirar todas as peças</button>
+    </section>
+    <section class="panel code-panel" aria-labelledby="code-title">
+      <header class="panel-heading"><span class="panel-number">03</span><h2 id="code-title">O código</h2><span class="language-tag">JS</span></header>
+      <div class="code-toolbar"><div class="code-tabs" role="tablist" aria-label="Visualização de código"><button id="tab-montagem" role="tab" aria-selected="true" aria-controls="code-view" type="button">Montagem</button><button id="tab-estrutura" role="tab" aria-selected="false" aria-controls="code-view" type="button" tabindex="-1">Estrutura das classes</button></div><button id="copy-code" class="copy-button" type="button" aria-label="Copiar código" title="Copiar código">⧉</button></div>
+      <div class="code-file"><span>● ● ●</span><span id="code-filename">personagem.js</span><small>JAVASCRIPT</small></div>
+      <div id="code-view" class="code-scroll" role="tabpanel" aria-labelledby="tab-montagem" tabindex="0"><pre><code id="code-content"></code></pre></div>
+      <div class="code-result"><span class="result-label">RETORNO DE visual()</span><code id="visual-result"></code></div>
+      <div class="chain-section"><span class="eyebrow" id="chain-label"></span><div id="object-chain"></div></div>
+    </section>
+  </div>
+  <aside class="lesson-strip" aria-label="Explicação do modo"><div class="lesson-heading"><span aria-hidden="true">✳</span><strong id="lesson-title"></strong></div><p id="lesson-text"></p><span class="lesson-stat" id="lesson-stat"></span></aside>
+  <p class="game-tip" id="game-tip"></p>
+</section>
+</main>
+<footer class="site-footer"><span>ATELIER DECORATOR ✦ FEITO PARA APRENDER</span><a href="https://refactoring.guru/pt-br/design-patterns/decorator" target="_blank" rel="noopener noreferrer">Padrão GoF · Refactoring.Guru ↗</a></footer>
+<p id="live-message" class="sr-only" role="status" aria-live="polite"></p><p id="asset-error" class="asset-error" role="alert" hidden></p>
+<dialog id="help-dialog" aria-labelledby="help-title">
+<button id="close-help" class="close-dialog" type="button" aria-label="Fechar explicação">×</button>
+<p class="eyebrow">UM PADRÃO QUE VOCÊ PODE VESTIR</p><h2 id="help-title">Por que usar Decorator?</h2>
+<p>Imagine uma classe para cada visual: personagem com camisa, com botas, com camisa e botas… Ao incluir peças, a quantidade de combinações cresce rapidamente.</p>
+<div class="help-comparison"><div><span>TRADICIONAL</span><strong>2⁴ = 16</strong><p>classes concretas para quatro peças opcionais, incluindo a base.</p></div><div><span>DECORATOR</span><strong>4 + 2 = 6</strong><p>classes: quatro decoradores de roupa, Personagem e RoupaDecorator.</p></div></div>
+<p>No <strong>Decorator</strong>, cada roupa guarda uma referência ao objeto anterior. Todos oferecem <code>visual()</code>: a roupa chama esse método no objeto envolvido e acrescenta sua própria peça ao resultado.</p>
+<pre class="help-example">personagem = new CamisaDecorator(personagem);
+personagem = new ChapeuDecorator(personagem);</pre>
+<p>Para tirar uma peça, este jogo reconstrói a cadeia com as peças restantes. O tom de pele é uma configuração do personagem base.</p>
+<p class="help-note">O modo tradicional ilustra a explosão de subclasses; há outras formas de resolver um guarda-roupa sem Decorator. Aqui, as duas abordagens produzem o mesmo visual para facilitar a comparação.</p>
+<a class="help-source" href="https://refactoring.guru/pt-br/design-patterns/decorator" target="_blank" rel="noopener noreferrer">Ler a explicação no Refactoring.Guru ↗</a>
+</dialog>
+</body></html>

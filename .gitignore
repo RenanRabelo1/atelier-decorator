@@ -1,0 +1,42 @@
+# Capturas e material de inspeção local
+output/
+
+# Pacote disponível localmente, mas não usado pelo jogo
+kenney_fantasy-ui-borders/
+
+# Publicar somente o painel utilizado
+Border and Panels Menu Part 3/*
+!Border and Panels Menu Part 3/01 Border 03.png
+
+# Publicar somente os ícones e a licença utilizados
+Free-Clothing-32x32-Pixel-Icons/*
+!Free-Clothing-32x32-Pixel-Icons/License.txt
+!Free-Clothing-32x32-Pixel-Icons/1 Icons/
+Free-Clothing-32x32-Pixel-Icons/1 Icons/*
+!Free-Clothing-32x32-Pixel-Icons/1 Icons/Icon30_06.png
+!Free-Clothing-32x32-Pixel-Icons/1 Icons/Icon30_13.png
+!Free-Clothing-32x32-Pixel-Icons/1 Icons/Icon30_23.png
+!Free-Clothing-32x32-Pixel-Icons/1 Icons/Icon30_33.png
+
+# Publicar somente os frames Mana Seed usados pelo personagem
+FREE Mana Seed Character Base Demo 2.0/*
+!FREE Mana Seed Character Base Demo 2.0/readme.txt
+!FREE Mana Seed Character Base Demo 2.0/this is only a demo.txt
+!FREE Mana Seed Character Base Demo 2.0/char_a_p1/
+FREE Mana Seed Character Base Demo 2.0/char_a_p1/*
+!FREE Mana Seed Character Base Demo 2.0/char_a_p1/char_a_p1_0bas_humn_v01.png
+!FREE Mana Seed Character Base Demo 2.0/char_a_p1/char_a_p1_0bas_humn_v03.png
+!FREE Mana Seed Character Base Demo 2.0/char_a_p1/char_a_p1_0bas_humn_v05.png
+!FREE Mana Seed Character Base Demo 2.0/char_a_p1/char_a_p1_0bas_humn_v06.png
+!FREE Mana Seed Character Base Demo 2.0/char_a_p1/char_a_p1_0bas_humn_v07.png
+!FREE Mana Seed Character Base Demo 2.0/char_a_p1/char_a_p1_0bas_humn_v10.png
+!FREE Mana Seed Character Base Demo 2.0/char_a_p1/1out/
+!FREE Mana Seed Character Base Demo 2.0/char_a_p1/4har/
+!FREE Mana Seed Character Base Demo 2.0/char_a_p1/5hat/
+FREE Mana Seed Character Base Demo 2.0/char_a_p1/1out/*
+FREE Mana Seed Character Base Demo 2.0/char_a_p1/4har/*
+FREE Mana Seed Character Base Demo 2.0/char_a_p1/5hat/*
+!FREE Mana Seed Character Base Demo 2.0/char_a_p1/1out/char_a_p1_1out_boxr_v01.png
+!FREE Mana Seed Character Base Demo 2.0/char_a_p1/1out/char_a_p1_1out_pfpn_v02.png
+!FREE Mana Seed Character Base Demo 2.0/char_a_p1/4har/char_a_p1_4har_dap1_v06.png
+!FREE Mana Seed Character Base Demo 2.0/char_a_p1/5hat/char_a_p1_5hat_pnty_v03.png
